@@ -1,7 +1,7 @@
 ---
 title: "[centos] yum install 오류"
 categories:
-  - centos
+  - post
 tags:
   - centos
   - yum
