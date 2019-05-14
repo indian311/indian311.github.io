@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "sywoo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "이런 저런 개발관련 글과 잡담을 올리는 블로그입니다."
+  bio              : "iOS, Swift, Web"
   location         : "Seoul, Korea"
   email            : "indian311@icloud.com"
   links:
