@@ -115,21 +115,21 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:indian311@icloud.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://indian311.github.io"
+#    - label: "Website"
+#      icon: "fas fa-fw fa-link"
+#      url: "https://indian311.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/_space_daddy_"
 #    - label: "Facebook"
 #      icon: "fab fa-fw fa-facebook-square"
 #       url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      # url: "https://github.com/"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -290,6 +290,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
