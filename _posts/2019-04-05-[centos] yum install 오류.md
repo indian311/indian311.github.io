@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "[centos] yum install 오류"
-date: 2019-04-05
+categories:
+  - centos
 tags:
-- centos
-- yum
-- install
-- error
+  - centos
+  - yum
+  - install
+  - error
 ---
 
 OS : centos 6.4
