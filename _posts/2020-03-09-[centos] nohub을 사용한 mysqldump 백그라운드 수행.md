@@ -1,5 +1,5 @@
 ---
-title: "[centos] nohub을 사용한 mysqldump 백그라운드 수행"
+title: "[centos] nohup을 사용한 mysqldump 백그라운드 수행"
 categories:
   - post
 tags:
