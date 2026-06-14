@@ -211,6 +211,19 @@ h3 {
   text-decoration: none;
 }
 
+.app-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid transparent;
+  color: var(--soft);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .app-actions a:hover {
   border-color: #bdb8af;
 }
