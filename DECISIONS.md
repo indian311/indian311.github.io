@@ -1,3 +1,16 @@
+# Current site decisions — 2026-11-01
+
+- User authorized production deployment of the Malangsoft renewal on 2026-11-01.
+- Korean copy, ivory/coral home, purple HanjaFriend book character.
+- Static HTML/CSS, no external fonts, analytics or advertising scripts.
+- Preserve existing app descriptions, store/support links, privacy anchors and app-ads.txt.
+- HanjaFriend uses actual app captures only; no fabricated reviews, counts or download links.
+- HanjaFriend is awaiting App Store review per handoff; store and AdMob URL settings are managed separately after publication.
+- Production content lives at the root and hanjafriend/. Exclude design-preview/ from Pages.
+- This renewal supersedes the English personal-site direction recorded below.
+
+---
+
 # Site Decisions
 
 This file records the current product and content decisions for the Sangyoon Woo app support site.
