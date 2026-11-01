@@ -34,3 +34,5 @@
 - 나우플레잉·혼술남녀는 소개 목록에서 삭제했다. 기존 루트 정책 앵커는 유지하며 정책 본문은 `legacy-privacy/`로 옮겼다.
 - `sitemap.xml`은 양쪽 언어의 대표 URL을 포함하고 각 페이지는 canonical·hreflang을 제공한다.
 - 검증: `node tests/language.test.cjs` 및 `python3 tests/site_check.py`. 자동 배포도 같은 검사를 실행한다.
+
+앱 카드와 개별 소개의 실제 아이콘 출처(2026-11-02): MyFontMaker는 CustomKeyboard 저장소의 iOS AppIcon-1024.png, 주유주유소·남친만들기·HellDia는 각 App Store ID 1228934470·6766078049·865942771의 Apple Lookup API artworkUrl512다. 이미지는 로컬 assets에 보관한다.
