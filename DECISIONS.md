@@ -1,5 +1,7 @@
 # Current site decisions — 2026-11-01
 
+- 2026-11-02: Order published app cards by initial App Store release date, newest first: 나의폰트만들기 → 남친만들기 → 주유주유소 → HellDia for Diablo 3. Use releaseDate, not currentVersionReleaseDate. HanjaFriend remains a separate unreleased feature.
+
 - User removed #nowplaying and Solo Drink Guide from app listings, requested short pages for remaining apps and browser-language-based Korean/English pages. Keep existing policy anchors and archive removed app notices. Explicit language selection overrides the browser preference.
 
 - User selected https://malangsoft.pages.dev/ as the primary URL and requested Google discovery. Use Cloudflare Pages Direct Upload, canonical metadata, sitemap and Search Console verification. Keep the GitHub Pages site compatible with existing app URLs.
