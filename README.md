@@ -23,3 +23,5 @@
 - `robots.txt`는 크롤링을 허용하고 사이트맵을 안내한다. `404.html`로 없는 URL은 실제 404 응답을 반환한다.
 - Google Search Console 소유권 확인 메타태그는 홈에서 유지한다. 사이트맵은 공개 페이지 3개만 포함한다.
 - 새 주소 공개 후에도 기존 앱의 지원·정책 URL과 app-ads.txt는 유지하며, 앱·AdMob 설정은 별도 작업에서 변경한다.
+
+2026-11-01 확인: Cloudflare 프로덕션 공개 및 Google Search Console HTML 태그 소유권 인증 완료. 사이트맵 제출 완료. 최초 사이트맵 상태는 ‘가져올 수 없음’이며, Google의 실제 URL 테스트와 색인 생성 요청 결과는 별도 확인이 필요하다. 공개 사이트맵·robots.txt와 소개·정책 canonical은 Chrome에서 확인했다.
