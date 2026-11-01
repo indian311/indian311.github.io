@@ -19,7 +19,7 @@
 - 프로젝트: `malangsoft`, 계정 ID: `a66272275956383a6c9355d2dc66b99c`.
 - 공개 파일: `index.html`, `404.html`, `hanjafriend/*.html`, `assets/*`, `app-ads.txt`, `robots.txt`, `sitemap.xml`.
 - 위 파일만 ZIP 루트에 넣고 Cloudflare Pages 프로젝트의 새 프로덕션 배포에 업로드한다. 저장소 전체나 `design-preview/`는 업로드하지 않는다.
-- 현재 GitHub push는 GitHub Pages만 자동 갱신한다. Cloudflare는 직접 업로드가 필요하다. 자동화 시 Pages 쓰기 권한을 가진 배포 자격 증명을 별도로 연결한다.
+- `master` push 시 `.github/workflows/cloudflare-pages.yml`이 공개 파일만 모아 Cloudflare 프로덕션(`main`)에 배포한다. 수동 실행도 가능하다. GitHub Actions의 `CLOUDFLARE_API_TOKEN` secret은 해당 계정의 Cloudflare Pages Edit 권한을 사용한다.
 - `robots.txt`는 크롤링을 허용하고 사이트맵을 안내한다. `404.html`로 없는 URL은 실제 404 응답을 반환한다.
 - Google Search Console 소유권 확인 메타태그는 홈에서 유지한다. 사이트맵은 공개 페이지 3개만 포함한다.
 - 새 주소 공개 후에도 기존 앱의 지원·정책 URL과 app-ads.txt는 유지하며, 앱·AdMob 설정은 별도 작업에서 변경한다.

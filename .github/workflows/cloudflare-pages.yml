@@ -1,0 +1,37 @@
+name: Deploy Cloudflare Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-pages-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Prepare public files
+        run: |
+          mkdir -p dist/hanjafriend
+          cp index.html 404.html robots.txt sitemap.xml app-ads.txt dist/
+          cp hanjafriend/*.html dist/hanjafriend/
+          cp -R assets dist/assets
+          test -f dist/index.html
+          test -f dist/hanjafriend/privacy.html
+          test ! -e dist/design-preview
+          test ! -e dist/.git
+      - name: Deploy production
+        uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: a66272275956383a6c9355d2dc66b99c
+          wranglerVersion: '4.156.0'
+          command: pages deploy dist --project-name=malangsoft --branch=main
