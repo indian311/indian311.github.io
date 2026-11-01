@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://malangsoft.pages.dev/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/en/</loc></url>
   <url><loc>https://malangsoft.pages.dev/hanjafriend/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/en/hanjafriend/</loc></url>
   <url><loc>https://malangsoft.pages.dev/hanjafriend/privacy</loc></url>
+  <url><loc>https://malangsoft.pages.dev/en/hanjafriend/privacy</loc></url>
+  <url><loc>https://malangsoft.pages.dev/myfontmaker/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/en/myfontmaker/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/gasgasstation/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/en/gasgasstation/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/campus-romance/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/en/campus-romance/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/helldia/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/en/helldia/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/legacy-privacy/</loc></url>
+  <url><loc>https://malangsoft.pages.dev/en/legacy-privacy/</loc></url>
 </urlset>

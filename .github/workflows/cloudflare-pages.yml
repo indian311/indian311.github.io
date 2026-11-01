@@ -20,10 +20,12 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - name: Prepare public files
         run: |
-          mkdir -p dist/hanjafriend
+          mkdir -p dist
           cp index.html 404.html robots.txt sitemap.xml app-ads.txt dist/
-          cp hanjafriend/*.html dist/hanjafriend/
+          cp -R hanjafriend myfontmaker gasgasstation campus-romance helldia legacy-privacy en dist/
           cp -R assets dist/assets
+          node tests/language.test.cjs
+          python3 tests/site_check.py dist
           test -f dist/index.html
           test -f dist/hanjafriend/privacy.html
           test ! -e dist/design-preview

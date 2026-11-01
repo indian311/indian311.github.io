@@ -688,3 +688,24 @@ details p{
 .privacy-list.policy{max-width:none;padding:0}
 .privacy-item{padding:24px 0;border-top:1px solid var(--line)}
 .card-bottom,.footer-links{flex-wrap:wrap}
+
+.top{height:auto;min-height:94px;padding:18px 0;gap:16px;flex-wrap:wrap}
+.top nav{gap:18px;flex-wrap:wrap}
+.language-switch{color:var(--violet);white-space:nowrap}
+.simple-product{max-width:850px;padding:70px 0 0}
+.simple-product .lead{font-size:20px;color:var(--muted);max-width:700px}
+.simple-product .app-glyph{margin:26px 0}
+.simple-product .bottom-cta{margin-top:70px}
+.product-links{flex-wrap:wrap}
+html[lang="en"] p{word-break:normal}
+@media(max-width:600px){
+  .top{min-height:77px}
+  .top nav{width:100%;gap:16px;font-size:12px}
+  .simple-product{padding-top:42px}
+  .simple-product h1{font-size:40px}
+  .simple-product .lead{font-size:17px}
+}
+
+html[lang="en"]{letter-spacing:-.01em}
+html[lang="en"] h1,html[lang="en"] h2{letter-spacing:-.04em}
+@media(min-width:851px){.app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}

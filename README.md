@@ -25,3 +25,12 @@
 - 새 주소 공개 후에도 기존 앱의 지원·정책 URL과 app-ads.txt는 유지하며, 앱·AdMob 설정은 별도 작업에서 변경한다.
 
 2026-11-01 확인: Cloudflare 프로덕션 공개 및 Google Search Console HTML 태그 소유권 인증 완료. 사이트맵 제출 완료. 최초 사이트맵 상태는 ‘가져올 수 없음’이며, Google의 실제 URL 테스트와 색인 생성 요청 결과는 별도 확인이 필요하다. 공개 사이트맵·robots.txt와 소개·정책 canonical은 Chrome에서 확인했다.
+
+## 한국어 / English
+
+- 브라우저의 첫 선호 언어가 `ko` 또는 `ko-*`이면 한국어, 나머지는 `/en/` 영어 페이지를 표시한다. 국가나 IP는 조회하지 않는다.
+- 상단 언어 전환은 `?lang=ko` / `?lang=en`을 사용하고 선택을 로컬 저장소에 기억한다. 저장소를 사용할 수 없어도 명시적 링크와 브라우저 언어 분기는 동작한다.
+- 홈, 한자친구 소개·정책, MyFontMaker·주유주유소·남친만들기·HellDia 소개, 이전 앱 개인정보 안내를 두 언어로 제공한다. 실제 앱 화면은 원본 캡처를 유지한다.
+- 나우플레잉·혼술남녀는 소개 목록에서 삭제했다. 기존 루트 정책 앵커는 유지하며 정책 본문은 `legacy-privacy/`로 옮겼다.
+- `sitemap.xml`은 양쪽 언어의 대표 URL을 포함하고 각 페이지는 canonical·hreflang을 제공한다.
+- 검증: `node tests/language.test.cjs` 및 `python3 tests/site_check.py`. 자동 배포도 같은 검사를 실행한다.

@@ -8,3 +8,4 @@ exclude:
   - LICENSE
   - DECISIONS.md
   - design-preview
+  - tests
