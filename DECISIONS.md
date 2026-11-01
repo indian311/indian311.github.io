@@ -1,5 +1,7 @@
 # Current site decisions — 2026-11-01
 
+- User selected https://malangsoft.pages.dev/ as the primary URL and requested Google discovery. Use Cloudflare Pages Direct Upload, canonical metadata, sitemap and Search Console verification. Keep the GitHub Pages site compatible with existing app URLs.
+
 - User authorized production deployment of the Malangsoft renewal on 2026-11-01.
 - Korean copy, ivory/coral home, purple HanjaFriend book character.
 - Static HTML/CSS, no external fonts, analytics or advertising scripts.

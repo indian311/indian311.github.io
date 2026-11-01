@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /design-preview/
+
+Sitemap: https://malangsoft.pages.dev/sitemap.xml
