@@ -35,4 +35,6 @@
 - `sitemap.xml`은 양쪽 언어의 대표 URL을 포함하고 각 페이지는 canonical·hreflang을 제공한다.
 - 검증: `node tests/language.test.cjs` 및 `python3 tests/site_check.py`. 자동 배포도 같은 검사를 실행한다.
 
-앱 카드와 개별 소개의 실제 아이콘 출처(2026-11-02): MyFontMaker는 CustomKeyboard 저장소의 iOS AppIcon-1024.png, 주유주유소·남친만들기·HellDia는 각 App Store ID 1228934470·6766078049·865942771의 Apple Lookup API artworkUrl512다. 이미지는 로컬 assets에 보관한다.
+앱 카드와 개별 소개의 실제 아이콘 출처(2026-11-02): 나의폰트만들기·주유주유소·남친만들기·HellDia는 각 App Store ID 6792460497·1228934470·6766078049·865942771의 Apple Lookup API artworkUrl512다. 이미지는 로컬 assets에 보관한다.
+
+2026-11-02 Apple Lookup API 확인: `com.malangsoft.customfontmaker`의 출시 이름은 **나의폰트만들기**, App Store ID는 `6792460497`, 공개 버전은 `1.1.2`다. 개발 중 표시와 TTF 내보내기 설명을 제거하고 공개 스토어의 실제 이름·설명·아이콘·링크로 맞췄다. 기존 `/myfontmaker/` 경로와 `#privacy-myfontmaker` 앵커는 유지한다.
