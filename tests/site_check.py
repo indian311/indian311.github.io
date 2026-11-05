@@ -34,7 +34,7 @@ def resolve(path):
 files = [root / 'index.html']
 for folder in ['hanjafriend', 'myfontmaker', 'gasgasstation', 'campus-romance', 'helldia', 'legacy-privacy', 'en']:
     files.extend(p for p in (root / folder).rglob('*.html') if p.name != '404.html')
-assert len(files) == 16, len(files)
+assert len(files) == 18, len(files)
 for path in files:
     d = Document(path)
     assert len(d.canonical) == 1, path
@@ -56,7 +56,7 @@ for home in [root / 'index.html', root / 'en/index.html']:
     assert '혼술남녀' not in s and '#nowplaying' not in s
     assert {'privacy-solo-drink-guide', 'privacy-nowplaying'} <= set(Document(home).ids)
 urls = [e.text for e in ET.parse(root / 'sitemap.xml').findall('.//{*}loc')]
-assert len(urls) == 16 and len(set(urls)) == 16
+assert len(urls) == 18 and len(set(urls)) == 18
 for url in urls:
     assert resolve(root / urlsplit(url).path.lstrip('/')).is_file(), url
-print('PASS: 16 pages, local links, anchors, canonical/hreflang, sitemap, removed app listings')
+print('PASS: 18 pages, local links, anchors, canonical/hreflang, sitemap, removed app listings')

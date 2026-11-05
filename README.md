@@ -5,6 +5,7 @@
 - `index.html`: 홈, 기존 앱 링크, 지원 및 기존 개인정보 앵커.
 - `hanjafriend/index.html`: 한자친구 소개와 실제 기기 화면.
 - `hanjafriend/privacy.html`: 한자친구 개인정보처리방침.
+- `hanjafriend/delete-account.html` 및 영어 대응 페이지: Android 앱 계정·동기화 기록 삭제 요청 안내. 이메일 요청 후 계정 소유 확인이 필요하며 이 페이지는 실제 삭제를 자동 실행하지 않는다.
 - `assets/site.css`: 운영 스타일. 기존 `assets/styles.css`는 이전 경로 호환을 위해 보관.
 - `app-ads.txt`: 기존 광고 설정 유지.
 - `design-preview/malangsoft/`: noindex 시안 기록. `_config.yml`에서 공개 빌드 제외.
