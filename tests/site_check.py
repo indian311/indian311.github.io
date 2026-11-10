@@ -32,9 +32,9 @@ def resolve(path):
     return path
 
 files = [root / 'index.html']
-for folder in ['hanjafriend', 'myfontmaker', 'gasgasstation', 'campus-romance', 'helldia', 'legacy-privacy', 'en']:
+for folder in ['flowerpig', 'hanjafriend', 'myfontmaker', 'gasgasstation', 'campus-romance', 'helldia', 'legacy-privacy', 'en']:
     files.extend(p for p in (root / folder).rglob('*.html') if p.name != '404.html')
-assert len(files) == 18, len(files)
+assert len(files) == 22, len(files)
 for path in files:
     d = Document(path)
     assert len(d.canonical) == 1, path
@@ -55,8 +55,17 @@ for home in [root / 'index.html', root / 'en/index.html']:
     assert 'id1312694667' not in s and 'id830071127' not in s
     assert '혼술남녀' not in s and '#nowplaying' not in s
     assert {'privacy-solo-drink-guide', 'privacy-nowplaying'} <= set(Document(home).ids)
+for home, prefix in [(root / 'index.html', ''), (root / 'en/index.html', '/en')]:
+    refs = Document(home).refs
+    assert f'{prefix}/flowerpig/' in refs, home
+    assert f'{prefix}/flowerpig/privacy.html' in refs, home
+for prefix in ['', 'en/']:
+    game = root / prefix / 'flowerpig/index.html'
+    assert 'support' in Document(game).ids, game
+    assert 'mailto:indian311@icloud.com' in game.read_text(), game
+    assert not any('apps.apple.com' in ref or 'play.google.com/store' in ref for ref in Document(game).refs), game
 urls = [e.text for e in ET.parse(root / 'sitemap.xml').findall('.//{*}loc')]
-assert len(urls) == 18 and len(set(urls)) == 18
+assert len(urls) == 22 and len(set(urls)) == 22
 for url in urls:
     assert resolve(root / urlsplit(url).path.lstrip('/')).is_file(), url
-print('PASS: 18 pages, local links, anchors, canonical/hreflang, sitemap, removed app listings')
+print('PASS: 22 pages, local links, anchors, canonical/hreflang, sitemap, removed app listings')

@@ -29,4 +29,6 @@ assert.equal(route('en-US', '/en/hanjafriend/privacy').url, 'https://malangsoft.
 assert.equal(route('en-US', '/', null, true).url, 'https://malangsoft.pages.dev/en/');
 assert.equal(route('ko-KR', '/en/?lang=en', null, true).url, 'https://malangsoft.pages.dev/en/?lang=en');
 assert.equal(route('ko-KR', '/?lang=bad', 'bad').url, 'https://malangsoft.pages.dev/?lang=bad');
+assert.equal(route('en-US', '/flowerpig/#support').url, 'https://malangsoft.pages.dev/en/flowerpig/#support');
+assert.equal(route('ko-KR', '/en/flowerpig/privacy.html?lang=ko').url, 'https://malangsoft.pages.dev/flowerpig/privacy.html?lang=ko');
 console.log('PASS: browser languages, overrides, storage disabled, deep links, no redirect loop');

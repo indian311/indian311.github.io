@@ -1,0 +1,17 @@
+/* Flower Pig keeps the site's layout and typography, with the game's palette. */
+.flowerpig{--violet:#876d5e}
+.flowerpig .product-art,.flowerpig .screen-mat{background:#d5e9ef}
+.flowerpig .bottom-cta{background:#f9e5df}
+.flowerpig .bottom-cta p{color:#78615a}
+.flowerpig .release{background:#f5e5ac;color:#665248}
+.flowerpig .product-art>img{width:248px;border-color:#fffbf1}
+.flowerpig .float-note{left:-14px;background:#fffbf1;color:#78615a}
+.flowerpig .step-list li:before{color:#876d5e}
+.flowerpig .support-note{max-width:620px;margin:0 auto 22px}
+.flowerpig .policy dt{font-weight:650;margin-top:20px}
+.flowerpig .policy dd{margin:6px 0 0;color:#585b51}
+@media(max-width:600px){
+  .flowerpig .product-art{margin:0 12px}
+  .flowerpig .float-note{left:-12px;bottom:40px;max-width:210px}
+}
+.flowerpig .product-icon,.flowerpig .product-art>img,.flowerpig .screen-mat img{height:auto}

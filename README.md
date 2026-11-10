@@ -39,3 +39,11 @@
 앱 카드와 개별 소개의 실제 아이콘 출처(2026-11-02): 나의폰트만들기·주유주유소·남친만들기·HellDia는 각 App Store ID 6792460497·1228934470·6766078049·865942771의 Apple Lookup API artworkUrl512다. 이미지는 로컬 assets에 보관한다.
 
 2026-11-02 Apple Lookup API 확인: `com.malangsoft.customfontmaker`의 출시 이름은 **나의폰트만들기**, App Store ID는 `6792460497`, 공개 버전은 `1.1.2`다. 개발 중 표시와 TTF 내보내기 설명을 제거하고 공개 스토어의 실제 이름·설명·아이콘·링크로 맞췄다. 기존 `/myfontmaker/` 경로와 `#privacy-myfontmaker` 앵커는 유지한다.
+
+## 난다난다꽃돼지 / Flower Pig
+
+- `flowerpig/index.html`, `en/flowerpig/index.html`: 실제 앱 캡처를 사용하는 게임 소개와 `#support` 지원 안내. iOS·Android 출시 준비 상태이며 가짜 다운로드 링크는 제공하지 않는다.
+- `flowerpig/privacy.html`, `en/flowerpig/privacy.html`: 기기 기록, 선택적 Game Center·Play Games, 공유, TestFlight 정보 처리 안내. 공개 문의 주소는 기존 사이트와 같은 `indian311@icloud.com`이다.
+- `assets/flowerpig*`: 게임 저장소의 실제 아이콘·플레이·결과 캡처 및 다른 앱에 영향을 주지 않는 전용 색상 스타일.
+- 네 페이지 모두 기존 언어 전환·canonical·hreflang 패턴을 사용한다. 대표 URL은 `https://malangsoft.pages.dev/flowerpig/`, GitHub Pages 대응 URL은 `https://indian311.github.io/flowerpig/`이다. 지원 URL에는 `#support`, 개인정보 URL에는 `privacy.html`을 사용한다.
+- Cloudflare 배포 허용 목록에 `flowerpig/`를 포함하며 기존 `en/`도 함께 배포한다. 검증 페이지 수는22개다.

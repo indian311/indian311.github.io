@@ -75,3 +75,9 @@ Use official store names where available. If an app has not been released yet, s
 
 - This repository was originally forked from `mmistakes/minimal-mistakes`, but the site content has been replaced with a lightweight static support site.
 - The GitHub `forked from` label is repository metadata and cannot be removed by code changes. Detaching the fork requires GitHub Support or recreating the repository.
+
+## 2026-11-11: Flower Pig public pages
+
+- 기존 정적 사이트·GitHub Pages 호환·Cloudflare canonical 구조 안에 난다난다꽃돼지의 한국어/영어 소개·지원·개인정보 페이지를 추가한다. 새로운 호스팅 서비스는 만들지 않는다.
+- 공개 브랜드는 말랑소프트, 문의는 기존 `indian311@icloud.com`을 사용한다. 플랫폼 순위 설정과 스토어 배포는 준비 중으로 표시하고 다운로드·TestFlight 공개 링크를 만들지 않는다.
+- 기존 출시 앱의 출시일 정렬을 유지하고 미출시 게임 카드는 그 뒤에 둔다. 이미지에는 실제 게임 아이콘과 캡처를 사용한다.
